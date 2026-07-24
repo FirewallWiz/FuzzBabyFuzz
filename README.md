@@ -1,6 +1,6 @@
 ## About ME & Project Context
 
-As an engineering student at **Politecnico di Torino**, I have focused on building a versatile skill set that spans low-level embedded systems, security tooling, and software engineering. 
+As an Cybersec engineering student at **Politecnico di Torino**, I have focused on building a versatile skill set that spans low-level embedded systems, security tooling, and software engineering. 
 
 I created this mid-level fuzzer to bridge the gap between my academic foundation and practical implementations. It practically demonstrates my understanding of operating system fundamentals (concurrency, memory management), security testing methodologies (defect discovery, crash triage), and protocol boundary analysis.
 
@@ -59,9 +59,6 @@ As the fuzzer runs its campaign, it will uncover the intentionally planted bugs 
 2026-07-24 20:30:00,150 - INFO -  -> State machine violation: FORMAT command received while in state FORMATTING
 ```
 
-## Future Enhancements & Scaling
-
-To evolve this into a production-grade tool suitable for enterprise hardware labs:
 
 * **Coverage-Guided Fuzzing**: Integrate with tools like `AFL++` or `libFuzzer` using Python bindings to generate coverage signals, moving from black-box random mutation to grey-box intelligent fuzzing.
 * **Full Protocol Specifications**: Expand `protocol.py` to support the complete 64-byte SQE and 16-byte CQE NVMe specification, including PRP/SGL list handling and vendor-specific opcodes.
